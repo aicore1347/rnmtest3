@@ -1,0 +1,744 @@
+# RNM GTA 5 Server Website - Generate.mdc
+
+## Project Overview
+This generate.mdc file serves as the master blueprint for creating a modern, high-conversion website for the RNM GTA 5 roleplay server. All subsequent files and components should be generated based on the specifications outlined in this document.
+
+## Design System Foundation
+
+### Color Palette Variables
+```css
+/* Primary Theme Colors */
+--deep-purple: #2D1B3D;
+--electric-purple: #8B5CF6;
+--bright-purple: #A855F7;
+--dark-purple: #1E1228;
+
+/* Secondary Colors */
+--bone-white: #F8F7F4;
+--charcoal: #1F1F23;
+--silver: #9CA3AF;
+
+/* Accent Colors */
+--neon-green: #10B981;
+--electric-blue: #3B82F6;
+--warning-orange: #F59E0B;
+
+/* Gradients */
+--primary-gradient: linear-gradient(135deg, #2D1B3D 0%, #8B5CF6 50%, #A855F7 100%);
+--hero-gradient: linear-gradient(180deg, rgba(45, 27, 61, 0.9) 0%, rgba(30, 18, 40, 0.95) 100%);
+--accent-glow: 0 0 30px rgba(139, 92, 246, 0.3);
+```
+
+### Typography System
+```css
+/* Font Families */
+--font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+--font-gaming: 'Orbitron', monospace;
+
+/* Font Scales */
+--text-xs: 0.75rem;    /* 12px */
+--text-sm: 0.875rem;   /* 14px */
+--text-base: 1rem;     /* 16px */
+--text-lg: 1.125rem;   /* 18px */
+--text-xl: 1.25rem;    /* 20px */
+--text-2xl: 1.5rem;    /* 24px */
+--text-3xl: 1.875rem;  /* 30px */
+--text-4xl: 2.25rem;   /* 36px */
+--text-5xl: 3rem;      /* 48px */
+--text-6xl: 3.75rem;   /* 60px */
+```
+
+### Spacing System
+```css
+--space-1: 0.25rem;  /* 4px */
+--space-2: 0.5rem;   /* 8px */
+--space-3: 0.75rem;  /* 12px */
+--space-4: 1rem;     /* 16px */
+--space-6: 1.5rem;   /* 24px */
+--space-8: 2rem;     /* 32px */
+--space-12: 3rem;    /* 48px */
+--space-16: 4rem;    /* 64px */
+--space-20: 5rem;    /* 80px */
+--space-24: 6rem;    /* 96px */
+```
+
+## Component Architecture
+
+### Core Layout Components
+1. **Header** (`components/layout/Header.tsx`)
+   - Sticky navigation with purple glass morphism
+   - RNM logo integration
+   - Mobile hamburger menu
+   - Live server status indicator
+
+2. **Footer** (`components/layout/Footer.tsx`)
+   - Discord links and social media
+   - Quick navigation links
+   - Copyright and server information
+
+3. **Navigation** (`components/layout/Navigation.tsx`)
+   - Smooth scroll navigation
+   - Active section highlighting
+   - Mobile-responsive design
+
+### Hero Section Components
+1. **HeroSection** (`components/sections/Hero.tsx`)
+   - Full-screen immersive experience
+   - Animated background with GTA 5 imagery
+   - Primary and secondary CTAs
+   - Real-time server statistics overlay
+
+2. **ServerStats** (`components/common/ServerStats.tsx`)
+   - Live player count
+   - Server uptime display
+   - Queue information
+   - Connection status indicator
+
+### Feature Showcase Components
+1. **FeaturesSection** (`components/sections/Features.tsx`)
+   - Three-column feature grid
+   - Icon-based feature highlights
+   - Hover animations and effects
+   - Progressive disclosure
+
+2. **FeatureCard** (`components/common/FeatureCard.tsx`)
+   - Reusable feature display component
+   - Purple glow effects on hover
+   - Icon integration
+   - Description overlays
+
+### Community & Social Proof
+1. **CommunitySection** (`components/sections/Community.tsx`)
+   - Player testimonial carousel
+   - Discord member count
+   - Recent activity feed
+   - Event highlights
+
+2. **TestimonialCard** (`components/common/TestimonialCard.tsx`)
+   - Player avatar and quote
+   - Star ratings
+   - Character name and role
+   - Animated entrance effects
+
+3. **DiscordWidget** (`components/common/DiscordWidget.tsx`)
+   - Live Discord integration
+   - Member count display
+   - Recent messages preview
+   - Join button with analytics
+
+### Media & Gallery
+1. **GallerySection** (`components/sections/Gallery.tsx`)
+   - Masonry layout for screenshots
+   - Video integration
+   - Lightbox functionality
+   - Category filtering
+
+2. **MediaCarousel** (`components/common/MediaCarousel.tsx`)
+   - Touch-friendly image carousel
+   - Auto-play video support
+   - Thumbnail navigation
+   - Full-screen mode
+
+## Page Structure Generator
+
+### Landing Page Layout
+```typescript
+// app/page.tsx structure
+export default function HomePage() {
+  return (
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <ServerStatsBar />
+        <FeaturesSection />
+        <CommunitySection />
+        <GallerySection />
+        <GetStartedSection />
+        <CTASection />
+      </main>
+      <Footer />
+    </>
+  );
+}
+```
+
+### Additional Pages Structure
+1. **Rules Page** (`app/rules/page.tsx`)
+2. **Server Info** (`app/server-info/page.tsx`)
+3. **Gallery** (`app/gallery/page.tsx`)
+4. **Staff Team** (`app/staff/page.tsx`)
+5. **Contact** (`app/contact/page.tsx`)
+
+## Content Generation Guidelines
+
+### Copywriting Tone & Voice
+- **Tone**: Exciting, edgy, professional
+- **Voice**: Confident, welcoming, gaming-focused
+- **Language**: Active voice, action-oriented
+- **Style**: Benefit-focused, community-centered
+
+### Hero Section Content
+```markdown
+Primary Headline: "Enter the Ultimate GTA 5 Roleplay Experience"
+Secondary: "Join RNM Server - Where Every Story Matters"
+CTA Primary: "Join Our Discord"
+CTA Secondary: "Watch Trailer"
+```
+
+### Feature Section Content Structure
+1. **Unique Roleplay Systems**
+   - Custom Jobs & Careers
+   - Dynamic Economy
+   - Property Ownership
+   - Character Progression
+
+2. **Active Community**
+   - Regular Events
+   - Friendly Staff
+   - Fair Moderation
+   - 24/7 Support
+
+3. **Technical Excellence**
+   - 99.9% Uptime
+   - Custom Mods
+   - Optimized Performance
+   - Anti-Cheat Protection
+
+## Animation & Interaction Specifications
+
+### Entrance Animations
+- **Hero Elements**: Staggered fade-in with slide-up (0.5s delay between elements)
+- **Feature Cards**: Scale-in animation on scroll intersection
+- **Gallery Items**: Parallax scroll effects
+- **Text Elements**: Typewriter effect for key headlines
+
+### Hover Effects
+- **Buttons**: Purple glow expansion with 0.3s transition
+- **Cards**: Subtle lift (8px) with shadow enhancement
+- **Images**: Zoom-in effect (1.05x scale) with overlay
+- **Links**: Underline animation from center outward
+
+### Scroll Animations
+- **Background**: Parallax movement at 0.5x scroll speed
+- **Sections**: Fade-in when 20% visible
+- **Counter Numbers**: Animated count-up on visibility
+- **Progress Bars**: Fill animation on scroll trigger
+
+## API Integration Requirements
+
+### Discord API Integration
+```typescript
+// Discord endpoints to integrate
+interface DiscordIntegration {
+  serverStats: {
+    endpoint: '/api/discord/stats';
+    data: {
+      memberCount: number;
+      onlineCount: number;
+      recentMessages: Message[];
+    };
+  };
+  
+  serverInvite: {
+    endpoint: '/api/discord/invite';
+    method: 'POST';
+    tracking: 'conversion_discord_join';
+  };
+}
+```
+
+### GTA 5 Server Status API
+```typescript
+// Server status integration
+interface ServerStatus {
+  endpoint: '/api/server/status';
+  refreshInterval: 30000; // 30 seconds
+  data: {
+    isOnline: boolean;
+    playerCount: number;
+    maxPlayers: number;
+    queueCount: number;
+    uptime: string;
+  };
+}
+```
+
+## File Structure Generator
+
+### Directory Structure
+```
+rnm-gta5-website/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── rules/
+│   │   └── page.tsx
+│   ├── gallery/
+│   │   └── page.tsx
+│   ├── staff/
+│   │   └── page.tsx
+│   └── api/
+│       ├── discord/
+│       │   └── route.ts
+│       └── server/
+│           └── route.ts
+├── components/
+│   ├── ui/ (shadcn/ui components)
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── Navigation.tsx
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── Features.tsx
+│   │   ├── Community.tsx
+│   │   ├── Gallery.tsx
+│   │   └── CTA.tsx
+│   ├── common/
+│   │   ├── ServerStats.tsx
+│   │   ├── DiscordWidget.tsx
+│   │   ├── TestimonialCard.tsx
+│   │   └── MediaCarousel.tsx
+│   └── animations/
+│       ├── FadeIn.tsx
+│       ├── ScrollReveal.tsx
+│       └── ParallaxSection.tsx
+├── lib/
+│   ├── utils.ts
+│   ├── api.ts
+│   └── analytics.ts
+├── public/
+│   ├── images/
+│   │   ├── logo/
+│   │   ├── screenshots/
+│   │   ├── players/
+│   │   └── events/
+│   └── videos/
+└── styles/
+    └── globals.css
+```
+
+## Content Asset Requirements
+
+### Image Assets Needed
+1. **Logo Assets**
+   - RNM logo (SVG format)
+   - Favicon variations (16x16, 32x32, 192x192)
+   - Social media profile images
+
+2. **Hero Background**
+   - High-resolution GTA 5 server screenshots
+   - Character action shots
+   - City skyline imagery
+   - Custom RNM-branded scenes
+
+3. **Feature Icons**
+   - Custom job icons (8-12 unique roles)
+   - Economy system illustrations
+   - Community event symbols
+   - Technical achievement badges
+
+4. **Gallery Content**
+   - 20+ high-quality server screenshots
+   - Player testimonial photos/avatars
+   - Event documentation images
+   - Behind-the-scenes content
+
+### Video Assets
+1. **Hero Background Video** (optional)
+   - Server gameplay montage (30-60 seconds)
+   - Looping background animation
+   - Optimized for web delivery
+
+2. **Testimonial Videos**
+   - Short player interviews (15-30 seconds each)
+   - Server event highlights
+   - Community interaction examples
+
+## Development Configuration Files
+
+### Package.json Dependencies
+```json
+{
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "tailwindcss": "^3.3.0",
+    "framer-motion": "^10.0.0",
+    "lucide-react": "^0.263.0",
+    "@radix-ui/react-*": "latest",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0"
+  }
+}
+```
+
+### Tailwind Configuration
+```javascript
+// tailwind.config.js extensions needed
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'rnm-purple': {
+          900: '#1E1228',
+          800: '#2D1B3D',
+          600: '#8B5CF6',
+          500: '#A855F7',
+        },
+        'rnm-bone': '#F8F7F4',
+        'rnm-charcoal': '#1F1F23',
+      },
+      fontFamily: {
+        'gaming': ['Orbitron', 'monospace'],
+      },
+      animation: {
+        'glow-pulse': 'glow-pulse 2s infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'slide-up': 'slide-up 0.5s ease-out',
+      },
+    },
+  },
+}
+```
+
+## Performance Optimization Rules
+
+### Image Optimization
+- All images must be optimized for web delivery
+- Use Next.js Image component with lazy loading
+- Implement multiple format support (WebP, AVIF fallbacks)
+- Responsive image sizing for different breakpoints
+
+### Code Splitting Strategy
+- Dynamic imports for non-critical components
+- Separate bundles for different page sections
+- Lazy loading for below-fold content
+- Critical CSS inlining for above-fold content
+
+### Loading States
+- Skeleton loaders for dynamic content
+- Progressive image loading
+- Animated placeholders during API calls
+- Smooth transitions between loading states
+
+## SEO Content Generation
+
+### Meta Data Templates
+```typescript
+// SEO metadata structure for each page
+interface PageMetadata {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogImage: string;
+  twitterCard: string;
+  canonicalUrl: string;
+}
+
+// Homepage example
+const homepageMetadata: PageMetadata = {
+  title: "RNM GTA 5 Roleplay Server - Best RP Community",
+  description: "Join RNM, the premier GTA 5 roleplay server with custom jobs, active community, and professional staff. Start your RP journey today!",
+  keywords: ["GTA 5 roleplay", "RP server", "GTA RP community", "RNM server"],
+  ogImage: "/images/og-hero.jpg",
+  twitterCard: "summary_large_image",
+  canonicalUrl: "https://rnm-server.com"
+};
+```
+
+### Structured Data Requirements
+- Organization schema for RNM community
+- WebSite schema for navigation
+- BreadcrumbList for page hierarchy
+- Review/Rating schema for testimonials
+
+## Analytics Implementation
+
+### Google Analytics 4 Events
+```typescript
+// Custom events to track
+interface AnalyticsEvents {
+  'discord_join_click': { source: string; section: string };
+  'server_connect_attempt': { player_count: number };
+  'gallery_image_view': { image_id: string; category: string };
+  'feature_card_hover': { feature_name: string };
+  'testimonial_view': { testimonial_id: string };
+  'scroll_depth': { percentage: number; page: string };
+}
+```
+
+### Conversion Tracking Setup
+- Discord join button clicks
+- Server connection attempts
+- Newsletter signups (if implemented)
+- Gallery engagement metrics
+- Time spent on features section
+
+## Responsive Design Breakpoints
+
+### Mobile First Approach
+```css
+/* Base styles for mobile (320px+) */
+.responsive-component {
+  /* Mobile styles as default */
+}
+
+/* Tablet styles (768px+) */
+@media (min-width: 768px) {
+  .responsive-component {
+    /* Tablet adjustments */
+  }
+}
+
+/* Desktop styles (1024px+) */
+@media (min-width: 1024px) {
+  .responsive-component {
+    /* Desktop layout */
+  }
+}
+
+/* Large desktop (1440px+) */
+@media (min-width: 1440px) {
+  .responsive-component {
+    /* Large screen optimizations */
+  }
+}
+```
+
+## Component Generation Specifications
+
+### Hero Section Requirements
+- Full viewport height on desktop
+- Animated background with subtle parallax
+- Centered content with strong CTAs
+- Real-time server statistics integration
+- Mobile-optimized layout with reduced height
+
+### Features Section Requirements
+- Three-column grid on desktop, single column on mobile
+- Icon-based feature presentation
+- Hover animations with purple glow effects
+- Progressive disclosure for detailed information
+- Intersection observer for scroll animations
+
+### Community Section Requirements
+- Testimonial carousel with auto-play
+- Discord integration widget
+- Live member count display
+- Recent activity feed
+- Mobile swipe gestures
+
+### Gallery Section Requirements
+- Masonry layout for varied image sizes
+- Lightbox functionality
+- Category filtering system
+- Lazy loading implementation
+- Touch-friendly mobile navigation
+
+## API Integration Specifications
+
+### Discord Bot Integration
+```typescript
+// Required Discord API endpoints
+interface DiscordAPI {
+  getServerStats(): Promise<{
+    memberCount: number;
+    onlineMembers: number;
+    serverName: string;
+    iconUrl: string;
+  }>;
+  
+  getRecentActivity(): Promise<{
+    messages: Array<{
+      author: string;
+      content: string;
+      timestamp: Date;
+      channel: string;
+    }>;
+  }>;
+  
+  generateInviteLink(): Promise<{
+    inviteUrl: string;
+    expiresAt: Date;
+  }>;
+}
+```
+
+### Server Status Monitoring
+```typescript
+// GTA 5 server status endpoint
+interface ServerStatusAPI {
+  getCurrentStatus(): Promise<{
+    online: boolean;
+    playerCount: number;
+    maxPlayers: number;
+    queueLength: number;
+    uptime: number;
+    lastRestart: Date;
+  }>;
+}
+```
+
+## Content Management System
+
+### Dynamic Content Structure
+```typescript
+// Content types for CMS integration
+interface ContentTypes {
+  announcements: {
+    title: string;
+    content: string;
+    priority: 'high' | 'medium' | 'low';
+    publishDate: Date;
+    featured: boolean;
+  };
+  
+  events: {
+    title: string;
+    description: string;
+    dateTime: Date;
+    type: 'community' | 'racing' | 'roleplay' | 'special';
+    participants: number;
+    images: string[];
+  };
+  
+  testimonials: {
+    playerName: string;
+    characterName: string;
+    quote: string;
+    rating: number;
+    avatar: string;
+    verified: boolean;
+  };
+}
+```
+
+## Security & Privacy Considerations
+
+### Data Protection
+- No personal data collection without consent
+- GDPR-compliant cookie management
+- Secure API endpoint protection
+- Rate limiting for all public APIs
+
+### Content Security Policy
+```http
+Content-Security-Policy: 
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  img-src 'self' data: https:;
+  font-src 'self' https://fonts.gstatic.com;
+  connect-src 'self' https://discord.com https://api.discord.com;
+```
+
+## Testing Strategy
+
+### Component Testing
+- Unit tests for all interactive components
+- Integration tests for API connections
+- Visual regression testing for design consistency
+- Mobile device testing across platforms
+
+### Performance Testing
+- Lighthouse auditing for Core Web Vitals
+- Load testing for high traffic scenarios
+- Image optimization verification
+- CDN performance validation
+
+### User Acceptance Testing
+- Conversion funnel testing
+- Mobile usability testing
+- Cross-browser compatibility
+- Accessibility compliance (WCAG 2.1 AA)
+
+## Deployment Configuration
+
+### Environment Variables
+```env
+# Discord Integration
+DISCORD_BOT_TOKEN=your_bot_token
+DISCORD_SERVER_ID=your_server_id
+DISCORD_INVITE_URL=your_permanent_invite
+
+# Analytics
+GOOGLE_ANALYTICS_ID=GA4_MEASUREMENT_ID
+HOTJAR_ID=your_hotjar_id
+
+# Server Status
+GTA_SERVER_API_URL=your_server_api_endpoint
+GTA_SERVER_API_KEY=your_api_key
+
+# Application
+NEXT_PUBLIC_SITE_URL=https://rnm-server.com
+```
+
+### Build Optimization
+- Static generation for marketing pages
+- Dynamic generation for real-time data
+- Image optimization pipeline
+- CSS purging for production builds
+
+## Success Metrics & KPIs
+
+### Primary Conversion Metrics
+- Discord join rate: Target 15-25%
+- Server application submissions: Target 40% increase
+- Average session duration: Target >3 minutes
+- Return visitor rate: Target 70% within 30 days
+
+### Technical Performance Metrics
+- First Contentful Paint: <2 seconds
+- Largest Contentful Paint: <3 seconds
+- Cumulative Layout Shift: <0.1
+- Time to Interactive: <4 seconds
+
+### User Engagement Metrics
+- Scroll depth: Target 60% reach bottom
+- Feature section engagement: Target 40% interaction
+- Gallery time spent: Target >45 seconds
+- Mobile bounce rate: Target <40%
+
+## Quality Assurance Checklist
+
+### Pre-Launch Validation
+- [ ] All components render correctly across devices
+- [ ] Discord integration functions properly
+- [ ] Server status updates in real-time
+- [ ] Images optimized and loading efficiently
+- [ ] Analytics tracking implemented
+- [ ] SEO metadata complete
+- [ ] Performance targets met
+- [ ] Accessibility standards compliant
+- [ ] Cross-browser compatibility verified
+- [ ] Mobile responsiveness tested
+
+### Post-Launch Monitoring
+- [ ] Conversion tracking active
+- [ ] Error monitoring setup
+- [ ] Performance monitoring dashboard
+- [ ] User feedback collection system
+- [ ] A/B testing framework ready
+- [ ] Content update workflow established
+
+## Content Update Workflow
+
+### Regular Content Updates
+1. **Weekly**: Server statistics and player highlights
+2. **Bi-weekly**: New testimonials and gallery images
+3. **Monthly**: Feature announcements and events
+4. **Quarterly**: Major content refresh and optimization
+
+### Emergency Updates
+- Server maintenance notifications
+- Critical rule changes
+- Security announcements
+- Community alerts
+
+---
+
+This generate.mdc file provides the comprehensive blueprint for developing the RNM GTA 5 Server website. All subsequent development files, components, and assets should be created according to these specifications to ensure consistency, performance, and conversion optimization.
