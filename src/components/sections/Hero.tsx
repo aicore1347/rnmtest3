@@ -150,7 +150,7 @@ export function Hero({ className }: HeroProps) {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute -top-40 -right-40 w-96 h-96 bg-rnm-purple-500/10 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-rnm-purple-500/5 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -163,7 +163,7 @@ export function Hero({ className }: HeroProps) {
             ease: "easeInOut",
             delay: 5,
           }}
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-rnm-purple-400/10 rounded-full blur-3xl"
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-rnm-purple-400/5 rounded-full blur-3xl"
         />
       </div>
 
