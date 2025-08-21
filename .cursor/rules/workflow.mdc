@@ -1,0 +1,197 @@
+---
+alwaysApply: true
+---
+
+# GTA 5 Server Development Workflow
+
+## Overview
+This workflow guides AI assistance through the complete development process for the GTA 5 server project. Follow this sequence precisely for optimal results.
+
+## Required Documentation Files
+- `Project_structure.md` - Project architecture and organization
+- `implementation.md` - Technical implementation guidelines
+- `UI_UX_doc.md` - User interface and experience specifications
+- `hero_UI_UX_doc.md` - Hero section UI/UX specifications
+- `bug_tracking.md` - Error handling and debugging protocols
+
+## Development Workflow
+
+### Phase 1: Project Foundation
+**Primary Reference:** `Project_structure.md`
+
+1. **Analyze Project Structure**
+   - Review the complete project architecture
+   - Understand folder hierarchy and organization
+   - Identify core components and dependencies
+   - Establish file naming conventions
+
+2. **Create Base Structure**
+   - Generate main project directories
+   - Set up configuration files
+   - Initialize core system files
+   - Establish resource organization
+
+### Phase 2: Core Implementation
+**Primary References:** `implementation.md` + `UI_UX_doc.md` + `hero_UI_UX_doc.md`
+
+1. **Technical Implementation**
+   - Follow implementation.md guidelines for:
+     - Server-side scripting standards
+     - Database integration patterns
+     - API endpoint structures
+     - Security protocols
+
+2. **UI/UX Integration**
+   - Apply UI_UX_doc.md specifications for:
+     - Interface design patterns
+     - User interaction flows
+     - Visual consistency standards
+     - Accessibility requirements
+
+3. **Hero Section Development**
+   - Implement hero_UI_UX_doc.md specifications for:
+     - Hero section layout and design
+     - Interactive elements and animations
+     - Visual hierarchy and branding
+     - Responsive design considerations
+
+4. **Feature Development Order**
+   - Core server functionality first
+   - User authentication systems
+   - Hero section implementation (hero_UI_UX_doc.md)
+   - Game mechanics integration
+   - UI components and interfaces
+   - Advanced features and customizations
+
+### Phase 3: Quality Assurance
+**Primary Reference:** `bug_tracking.md`
+
+1. **Error Prevention**
+   - Implement error handling as specified in bug_tracking.md
+   - Add logging and monitoring systems
+   - Create validation mechanisms
+   - Establish testing protocols
+
+2. **Debugging Protocol**
+   - Use bug_tracking.md procedures for:
+     - Issue identification and classification
+     - Systematic debugging approaches
+     - Code review standards
+     - Resolution documentation
+
+## Key Principles
+
+1. **Sequential Development:** Always complete Phase 1 before moving to Phase 2, and Phase 2 before Phase 3
+2. **Documentation First:** Review relevant documentation files before coding
+3. **Consistency:** Maintain standards established in project documentation
+4. **Error Handling:** Integrate bug tracking protocols throughout development
+
+## Quick Reference Commands
+
+- **Structure Review:** "Analyze Project_structure.md and create the base project"
+- **Implementation Phase:** "Use implementation.md, UI_UX_doc.md, and hero_UI_UX_doc.md to build [specific feature]"
+- **Hero Section:** "Implement hero section using hero_UI_UX_doc.md specifications"
+- **Bug Resolution:** "Apply bug_tracking.md protocols to resolve [specific issue]"
+
+## Notes for AI Assistant
+
+- Always reference the appropriate documentation file for each phase
+- Maintain consistency with established patterns and conventions
+- Prioritize code quality and error handling throughout development
+- Ask for clarification if documentation conflicts arise# GTA 5 Server Development Workflow
+
+## Overview
+This workflow guides AI assistance through the complete development process for the GTA 5 server project. Follow this sequence precisely for optimal results.
+
+## Required Documentation Files
+- `Project_structure.md` - Project architecture and organization
+- `implementation.md` - Technical implementation guidelines
+- `UI_UX_doc.md` - User interface and experience specifications
+- `hero_UI_UX_doc.md` - Hero section UI/UX specifications
+- `bug_tracking.md` - Error handling and debugging protocols
+
+## Development Workflow
+
+### Phase 1: Project Foundation
+**Primary Reference:** `Project_structure.md`
+
+1. **Analyze Project Structure**
+   - Review the complete project architecture
+   - Understand folder hierarchy and organization
+   - Identify core components and dependencies
+   - Establish file naming conventions
+
+2. **Create Base Structure**
+   - Generate main project directories
+   - Set up configuration files
+   - Initialize core system files
+   - Establish resource organization
+
+### Phase 2: Core Implementation
+**Primary References:** `implementation.md` + `UI_UX_doc.md` + `hero_UI_UX_doc.md`
+
+1. **Technical Implementation**
+   - Follow implementation.md guidelines for:
+     - Server-side scripting standards
+     - Database integration patterns
+     - API endpoint structures
+     - Security protocols
+
+2. **UI/UX Integration**
+   - Apply UI_UX_doc.md specifications for:
+     - Interface design patterns
+     - User interaction flows
+     - Visual consistency standards
+     - Accessibility requirements
+
+3. **Hero Section Development**
+   - Implement hero_UI_UX_doc.md specifications for:
+     - Hero section layout and design
+     - Interactive elements and animations
+     - Visual hierarchy and branding
+     - Responsive design considerations
+
+4. **Feature Development Order**
+   - Core server functionality first
+   - User authentication systems
+   - Hero section implementation (hero_UI_UX_doc.md)
+   - Game mechanics integration
+   - UI components and interfaces
+   - Advanced features and customizations
+
+### Phase 3: Quality Assurance
+**Primary Reference:** `bug_tracking.md`
+
+1. **Error Prevention**
+   - Implement error handling as specified in bug_tracking.md
+   - Add logging and monitoring systems
+   - Create validation mechanisms
+   - Establish testing protocols
+
+2. **Debugging Protocol**
+   - Use bug_tracking.md procedures for:
+     - Issue identification and classification
+     - Systematic debugging approaches
+     - Code review standards
+     - Resolution documentation
+
+## Key Principles
+
+1. **Sequential Development:** Always complete Phase 1 before moving to Phase 2, and Phase 2 before Phase 3
+2. **Documentation First:** Review relevant documentation files before coding
+3. **Consistency:** Maintain standards established in project documentation
+4. **Error Handling:** Integrate bug tracking protocols throughout development
+
+## Quick Reference Commands
+
+- **Structure Review:** "Analyze Project_structure.md and create the base project"
+- **Implementation Phase:** "Use implementation.md, UI_UX_doc.md, and hero_UI_UX_doc.md to build [specific feature]"
+- **Hero Section:** "Implement hero section using hero_UI_UX_doc.md specifications"
+- **Bug Resolution:** "Apply bug_tracking.md protocols to resolve [specific issue]"
+
+## Notes for AI Assistant
+
+- Always reference the appropriate documentation file for each phase
+- Maintain consistency with established patterns and conventions
+- Prioritize code quality and error handling throughout development
+- Ask for clarification if documentation conflicts arise
